@@ -54,7 +54,7 @@ jobs:
   msrv:
     # btrfs-core is a published library; its MSRV is a downstream-facing promise.
     # The floor is 1.87 — dictated by the batteries-included pure-Rust zstd
-    # decoder (ruzstd 0.9.1, rust-version 1.87), not our own code. An explicit
+    # decoder (ruzstd 0.8, rust-version 1.87), not our own code. An explicit
     # version ref sets RUSTUP_TOOLCHAIN, which beats rust-toolchain.toml's pin.
     name: MSRV (1.87)
     runs-on: ubuntu-latest
